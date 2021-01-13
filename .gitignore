@@ -7,8 +7,7 @@ node_modules
 *.zip
 doc
 coverage/
-dist/*
-!dist/index.html
+dist
 *.log
 
 # OS generated files
