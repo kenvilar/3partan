@@ -6,7 +6,8 @@
 "abstracts/mixins";
 
 // 2. Vendors
-@import "~normalize.css";
+@import "~normalize.css",
+"vendors/html5-boilerplate";
 
 // 3. Base stuff
 @import "base/base",
