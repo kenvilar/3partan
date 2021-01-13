@@ -1,21 +1,22 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   /* here you can define another js file */
   entry: {
     index: './src/js/index.js',
-    another: './src/js/another.js',
+    /*another: './src/js/another.js',*/
   },
   output: {
     filename: '[name].[hash:8].js',
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
-        test: [/.js$/],
-        exclude: /(node_modules)/,
+        test: /\.js$/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -58,7 +59,8 @@ module.exports = {
   },
 
   devServer: {
-    port: 8080,
+    port: 3000,
+    host: 'localhost',
   },
 
   plugins: [
