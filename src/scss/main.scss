@@ -1,13 +1,25 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables",
+"abstracts/functions",
+"abstracts/mixins";
+
+// 2. Vendors
 @import "~normalize.css";
 
-@import "variables";
-@import "modules/hello";
+// 3. Base stuff
+@import "base/base",
+"base/fonts",
+"base/typography",
+"base/helpers";
 
-body {
-  background: $partan;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
+// 4. Layout-related sections
+@import "layout/header",
+"layout/footer";
+
+// 5. Components
+@import "components/button";
+
+// 6. Page-specific styles
+@import "pages/home";
