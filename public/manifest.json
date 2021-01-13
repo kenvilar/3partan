@@ -1,0 +1,10 @@
+{
+  "name": "3Partan",
+  "short_name": "3Partan",
+  "theme_color": "#2D2241",
+  "background_color": "#2D2241",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/3partan/",
+  "start_url": "/3partan/"
+}

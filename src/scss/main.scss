@@ -1,0 +1,13 @@
+@import "~normalize.css";
+
+@import "variables";
+@import "modules/hello";
+
+body {
+  background: $partan;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
