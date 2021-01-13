@@ -2,8 +2,20 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 node_modules
-dist
 .cache
 .idea
 *.zip
 doc
+coverage/
+dist/*
+!dist/index.html
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
