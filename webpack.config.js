@@ -10,9 +10,6 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
   },
-  devServer: {
-    port: 3000,
-  },
   module: {
     rules: [
       {
