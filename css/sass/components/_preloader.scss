@@ -33,7 +33,7 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(to bottom, black, rgb(0 0 0 / 0.9), rgba(0, 0, 0, 0.5), rgb(0 0 0 / 0.5), black);
-    animation-name: bgFadeIn;
+    animation-name: bg_fadein;
     animation-duration: 5s;
     animation-fill-mode: both;
   }
@@ -54,10 +54,16 @@
     transform-origin: 0 0;
     background: url('../../img/Logo.gif') no-repeat center;
     background-size: 85%;
+
+    @media (min-width: 768px) {
+      width: 800px;
+      height: 800px;
+      top: 0;
+    }
   }
 }
 
-@keyframes bgFadeIn {
+@keyframes bg_fadein {
   0% {
     opacity: 0.5;
   }
