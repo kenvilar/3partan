@@ -22,3 +22,5 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+var jquery = require('jquery');
+window.$ = window.jQuery = jquery;

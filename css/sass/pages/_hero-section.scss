@@ -13,6 +13,54 @@
       @media (min-width: 280px) {
         width: 36%;
       }
+
+      @media (min-width: 640px) {
+        width: 243px;
+      }
+    }
+  }
+
+  .center-menu-wrapper {
+    font-family: $druk-font;
+    font-size: calc(2 * (1vh + 1.5vw));
+    color: rgb(214, 42, 51);
+    margin-top: 30%;
+
+    .nav-center-menu {
+      overflow-y: visible;
+      overflow-x: auto;
+      white-space: nowrap;
+      vertical-align: text-top;
+      margin: 0;
+      padding: 0;
+      clear: both;
+      border-spacing: 5px;
+
+      .nav_item {
+        display: inline-block;
+        padding: 0;
+        margin: 0 17px;
+        vertical-align: middle;
+        text-align: center;
+        text-shadow: 1px 0 0 $text-color,
+        -1px 0 0 $text-color,
+        0 1px 0 $text-color,
+        0 -1px 0 $text-color;
+
+        span {
+          position: relative;
+          opacity: 0.85;
+
+          &:before {
+            content: attr(data-center-menu);
+            color: $text-color;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
     }
   }
 }
