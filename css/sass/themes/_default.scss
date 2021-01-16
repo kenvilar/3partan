@@ -2,3 +2,17 @@
 // When having several themes, this file contains everything related to the
 // default one.
 // -----------------------------------------------------------------------------
+.cover-container {
+  /*max-width: 42em;*/
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  padding-top: 2.5rem;
+}
+
+.main-background {
+  background: #000000 url("../../img/background--mobile.jpg") no-repeat center top;
+  background-size: cover;
+}

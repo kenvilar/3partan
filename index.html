@@ -32,30 +32,33 @@
   <link rel="manifest" href="site.webmanifest">
 </head>
 
-<body class="black-bg">
+<body>
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand sr-only" href="#">3partan</a>
-  <button class="navbar-toggler w-100 text-right" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse"></div>
-</nav>
+<div class="cover-container d-flex w-100 h-100 mx-auto flex-column main-background">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a class="navbar-brand sr-only" href="#">3partan</a>
+      <button class="navbar-toggler w-100 text-right" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse"></div>
+    </nav>
+  </header>
 
-<main role="main">
-  <div class="container">
-    <h1>Testing</h1>
-    <p>Testing</p>
-    <div class="row mb-3">
-      <div class="col-4 themed-grid-col">.col-4</div>
-      <div class="col-4 themed-grid-col">.col-4</div>
-      <div class="col-4 themed-grid-col">.col-4</div>
-    </div>
-  </div>
-</main>
+  <main role="main">
+    <section class="hero-section container-fluid">
+      <!-- @import "./_imports/test.html" -->
+      <div>
+        <sergey-import src="test"></sergey-import>
+      </div>
+      <div class="logo-image mx-auto text-center">
+        <img src="img/logo-full.png" alt="logo" width="338" height="92">
+      </div>
+    </section>
+  </main>
+</div>
 
-<!--<footer></footer>-->
 <script src="js/main.js"></script>
 </body>
 

@@ -5,8 +5,24 @@
 /**
  * Set up a decent box model on the root element
  */
+html,
+body {
+  height: 100%;
+  background-color: $brand-color;
+}
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  min-width: 240px;
 }
 
 /**
@@ -32,8 +48,4 @@ a {
     color: $text-color;
     text-decoration: underline;
   }
-}
-
-body {
-  padding-top: 4.5rem;
 }

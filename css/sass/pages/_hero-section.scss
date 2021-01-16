@@ -1,0 +1,18 @@
+.hero-section {
+  .logo-image {
+    margin-top: 35px;
+
+    @media (min-width: 280px) {
+      margin-top: 25%;
+    }
+
+    img {
+      height: auto;
+      width: 38%;
+
+      @media (min-width: 280px) {
+        width: 36%;
+      }
+    }
+  }
+}

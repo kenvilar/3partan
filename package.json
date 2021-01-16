@@ -11,7 +11,8 @@
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
     "prod": "parcel build entry.js",
-    "start": "npm run build && npm run dev",
+    "sergey": "sergey --exclude=css,js,img,",
+    "start": "npm run build && sergey && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -32,6 +33,7 @@
     "popper.js": "^1.16.1",
     "postcss-sass": "^0.4.4",
     "scrollreveal": "^4.0.7",
+    "sergey": "0.0.13",
     "vanilla-lazyload": "^17.3.0"
   },
   "browserslist": [

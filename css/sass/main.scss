@@ -17,13 +17,19 @@
 
 // 4. Layout-related sections
 @import "layout/header",
-"layout/footer";
+"layout/footer",
+"layout/navbar";
 
 // 5. Components
 @import "components/button";
 
 // 6. Page-specific styles
-@import "pages/home";
+@import "pages/hero-section",
+"pages/rules",
+"pages/future-tools",
+"pages/how-it-works",
+"pages/testimonials",
+"pages/submit-your-music";
 
 // 7. Themes
 @import "themes/default";
