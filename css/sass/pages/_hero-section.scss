@@ -1,9 +1,19 @@
 .hero-section {
-  .logo-image {
+  .logo-image-wrapper {
+    opacity: 0;
     margin-top: 35px;
+    transition-delay: 1s;
+    transform: translateY(10%) scale(0);
+    @include transitionAll(0.45s);
 
     @media (min-width: 280px) {
       margin-top: 25%;
+    }
+
+    &.start-animate {
+      opacity: 1;
+      transition-delay: 0.5s;
+      transform: translateY(0) scale(1);
     }
 
     img {
@@ -27,6 +37,7 @@
     margin-top: 30%;
 
     .nav-center-menu {
+      opacity: 0;
       overflow-y: visible;
       overflow-x: auto;
       white-space: nowrap;
@@ -35,6 +46,15 @@
       padding: 0;
       clear: both;
       border-spacing: 5px;
+      transition-delay: 1s;
+      transform: translateX(10%) scale(0);
+      @include transitionAll(0.45s);
+
+      &.start-animate {
+        opacity: 1;
+        transition-delay: 0.5s;
+        transform: translateX(0) scale(1);
+      }
 
       .nav_item {
         display: inline-block;

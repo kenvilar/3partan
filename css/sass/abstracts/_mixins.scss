@@ -32,3 +32,11 @@
   }
 }
 
+@mixin transitionAll($value) {
+  transition: all $value linear;
+}
+
+@mixin transition($value) {
+  transition: $value linear;
+}
+

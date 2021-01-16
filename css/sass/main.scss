@@ -21,7 +21,8 @@
 "layout/navbar";
 
 // 5. Components
-@import "components/button";
+@import "components/button",
+"components/preloader";
 
 // 6. Page-specific styles
 @import "pages/hero-section",
