@@ -43,8 +43,9 @@ body {
  * Basic styles for links
  */
 a {
-  color: $brand-color;
+  color: inherit;
   text-decoration: none;
+  @include transitionAll(0.15s);
 
   @include on-event {
     color: $text-color;

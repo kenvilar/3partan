@@ -5,3 +5,4 @@ import '@fortawesome/fontawesome-free/css/all.css';
 import '../css/sass/main.scss';
 
 import '../js/custom';
+import '../js/slick-carousel';

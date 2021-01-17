@@ -22,8 +22,11 @@ function startIntro(timer) {
   setTimeout(() => {
     $('.cover-container').addClass('start-animate');
   }, timer);
-  setTimeout(function() {
+  setTimeout(() => {
     $('.logo-image-wrapper').addClass('start-animate');
     $('.nav-center-menu').addClass('start-animate');
   }, timer + 500);
+  setTimeout(() => {
+    $('.social-media-icons-wrapper').addClass('start-animate');
+  }, timer + 2000);
 }

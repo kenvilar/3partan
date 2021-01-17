@@ -34,6 +34,7 @@
     "postcss-sass": "^0.4.4",
     "scrollreveal": "^4.0.7",
     "sergey": "0.0.13",
+    "slick-carousel": "^1.8.1",
     "vanilla-lazyload": "^17.3.0"
   },
   "browserslist": [
