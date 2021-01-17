@@ -11,40 +11,82 @@
     font-size: calc(2.5 * (1vh + 1.5vw));
     padding: 0 20px;
     margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      font-size: calc(1.5 * (1vh + 1.5vw));
+      text-align: left !important;
+      padding-left: 100px;
+    }
   }
 
-  .item {
-    /*margin-right: 90px;*/
-    flex: 0 0 auto;
-    width: 100vw;
-    text-align: center;
+  .scroll-horizontal {
+    display: flex;
 
-    .item-number {
-      font-size: calc(7 * (1vh + 1.5vw));
-      font-family: $druk-font;
-      line-height: 1;
-      flex: 0 0 auto;
-      margin-bottom: 15px;
-
-      &:before {
-        content: attr(data-rules-num);
-        color: black;
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        top: 0;
-        font-size: calc(9 * (1vh + 1.5vw));
-        transform: translateX(-50%);
-        text-shadow: -1px -1px 0 #484848, 1px -1px 0 #484848, -1px 1px 0 #484848, 1px 1px 0 #484848;
-      }
+    @media (min-width: 768px) {
+      padding-left: 180px;
     }
 
-    p {
-      font-family: $normal-font;
-      font-weight: 200;
-      letter-spacing: 1px;
-      text-align: left;
-      line-height: 1.4;
+    .item {
+      margin-right: 90px;
+      flex: 0 0 auto;
+      width: 100vw;
+      display: block;
+      padding: 5px 30px 0;
+      text-align: center;
+
+      @media (min-width: 768px) {
+        align-items: flex-start;
+        display: flex;
+        min-width: 680px;
+        width: 680px;
+        padding: 24px 10px 30px;
+      }
+
+      .item-number {
+        font-size: calc(7 * (1vh + 1.5vw));
+        font-family: $druk-font;
+        line-height: 1;
+        flex: 0 0 auto;
+        text-align: center;
+        position: relative;
+
+        @media (min-width: 768px) {
+          font-size: calc(5 * (1vh + 1.5vw));
+          top: -30px;
+        }
+
+        &:before {
+          content: attr(data-rules-num);
+          color: black;
+          position: absolute;
+          z-index: -1;
+          left: 50%;
+          top: 0;
+          font-size: calc(9 * (1vh + 1.5vw));
+          transform: translateX(-50%);
+          text-shadow: -1px -1px 0 #484848, 1px -1px 0 #484848, -1px 1px 0 #484848, 1px 1px 0 #484848;
+
+          @media (min-width: 768px) {
+            font-size: calc(7 * (1vh + 1.5vw));
+            top: 5px;
+          }
+        }
+      }
+
+      .content-text {
+        font-family: $normal-font;
+        font-size: calc(1.9 * (1vh + 1.5vw));
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: left;
+        line-height: 1.4;
+
+        @media (min-width: 768px) {
+          font-size: calc(1 * (1vh + 1.5vw));
+          margin-top: 0;
+          padding-left: 45px;
+        }
+      }
     }
   }
 }

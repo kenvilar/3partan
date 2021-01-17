@@ -106,15 +106,6 @@ main {
   }
 }
 
-@keyframes zoomAfterPage {
-  0% {
-    background-size: 130%;
-  }
-  100% {
-    background-size: 100%;
-  }
-}
-
 @keyframes page-content-fadein {
   0% {
     opacity: 0;
