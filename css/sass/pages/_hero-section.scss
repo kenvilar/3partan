@@ -196,7 +196,7 @@
   .submit-your-music-wrapper {
     opacity: 0;
     position: absolute;
-    top: 7vw;
+    top: 7.6vw;
     width: 10vw;
     left: 84vw;
     transition-delay: 1.5s;
@@ -214,7 +214,8 @@
       font-family: 'Druk Wide', Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       white-space: nowrap;
-      @include transform(skew(1deg, -3deg) rotateY(-12deg));
+      line-height: 1;
+      @include transform(skew(1deg, -3.5deg) rotateY(-12deg));
 
       .first {
         font-size: 0.7vw;
