@@ -13,6 +13,7 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 // Site font
 $druk-font: 'Druk Wide', Helvetica, Arial, sans-serif !default;
+$normal-font: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
 
 
 /// Copy text color
@@ -22,6 +23,8 @@ $text-color: #fdfdfd !default;
 /// Main brand color
 /// @type Color
 $brand-color: rgb(0, 0, 0) !default;
+
+$red-color: #d62a33 !default;
 
 /// Light grey
 /// @type Color

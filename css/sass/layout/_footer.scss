@@ -1,3 +1,89 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+  bottom: 0;
+  left: 0;
+  padding: 0 20px 35px;
+
+  .footer_close {
+    font-size: 14px;
+    transform-origin: 0 0;
+    font-family: $druk-font;
+
+    &:hover {
+      transform: scale(1.3);
+      color: $red-color;
+    }
+  }
+
+  .footer_link {
+    margin-left: auto;
+
+    &:hover {
+      color: $red-color;
+    }
+
+    .footer_arrow {
+      margin-bottom: 10px;
+      margin-left: auto;
+      animation-name: arrowAnimate;
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      max-width: 174px;
+
+      @media (min-width: 768px) {
+        max-width: 346px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .footer_text {
+      display: block;
+      font-size: calc(1.7 * (1vh + 1.5vw));
+      text-transform: uppercase;
+      font-family: 'Druk Wide', Helvetica, Arial, sans-serif;
+      position: relative;
+      padding-right: 25px;
+
+      @media (min-width: 768px) {
+        font-size: 30px;
+        padding-right: 0;
+      }
+
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        @include transform(translate(70%, -50%));
+        z-index: -1;
+        letter-spacing: 1px;
+        right: 100%;
+        font-size: calc(3 * (1vh + 1.5vw));
+        color: #000;
+        white-space: nowrap;
+        text-shadow: -1px -1px 0 #484848, 1px -1px 0 #484848, -1px 1px 0 #484848, 1px 1px 0 #484848;
+
+        @media (min-width: 768px) {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+
+  // Go back to homepage link
+  .footer_text--center {
+    text-align: center;
+  }
+}
+
+@keyframes arrowAnimate {
+  0%,
+  100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}

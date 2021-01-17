@@ -13,9 +13,18 @@ jQuery(function($) {
 });
 
 $(document).ready(function() {
+  // Introduction
   startIntro(5000);
 
+  // Menu horizontal scrolling
   $('.nav-center-menu').hScroll(60);
+  $('.scroll-horizontal').hScroll(60);
+
+  // click menue
+  clickMenu();
+
+  // Close the page content
+  pageClose();
 });
 
 function startIntro(timer) {
@@ -30,4 +39,24 @@ function startIntro(timer) {
     $('.social-media-icons-wrapper').addClass('start-animate');
     $('.submit-your-music-wrapper').addClass('start-animate');
   }, timer + 2000);
+}
+
+function clickMenu() {
+  $('[data-show-page]').click(function(e) {
+    e.preventDefault();
+    console.log('$(this).data()', $(this).data().showPage);
+    let pageValue = $(this).data().showPage;
+    if (pageValue) {
+      $('.cover-container').toggleClass('hide-content');
+      $('.page-content').toggleClass('show');
+    }
+  });
+}
+
+function pageClose() {
+  $('[data-hide-page-content]').click(function(e) {
+    e.preventDefault();
+    $('.cover-container').toggleClass('hide-content');
+    $('.page-content').toggleClass('show');
+  });
 }

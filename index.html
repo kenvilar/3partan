@@ -73,7 +73,7 @@
           </div>
         </div>
       </div>
-      <div class="submit-your-music-wrapper">
+      <div class="submit-your-music-wrapper d-none d-md-block">
         <a href="" class="link">
           <span class="first">Submit Your</span>
           <span class="second">Music</span>
@@ -82,21 +82,53 @@
       <div class="center-menu-wrapper">
         <nav class="nav-center-menu">
           <div class="nav_item text-uppercase">
-            <a href="#"><span data-center-menu="Home">Home</span></a></div>
+            <a href="#" data-show-page="Home"><span data-center-menu="Home">Home</span></a></div>
           <div class="nav_item text-uppercase">
-            <a href="#"><span data-center-menu="Rules">Rules</span></a></div>
+            <a href="#" data-show-page="Rules"><span data-center-menu="Rules">Rules</span></a></div>
           <div class="nav_item text-uppercase">
-            <a href="#"><span data-center-menu="Future Tools">Future Tools</span></a></div>
+            <a href="#" data-show-page="Future Tools"><span data-center-menu="Future Tools">Future Tools</span></a>
+          </div>
           <div class="nav_item text-uppercase">
-            <span data-center-menu="How It Works">How It Works</span></div>
+            <a href="" data-show-page="How It Works"><span data-center-menu="How It Works">How It Works</span></a></div>
           <div class="nav_item text-uppercase">
-            <span data-center-menu="Testimonials">Testimonials</span></div>
+            <a href="" data-show-page="Testimonials"><span data-center-menu="Testimonials">Testimonials</span></a></div>
           <div class="nav_item text-uppercase">
-            <span data-center-menu="Submit Your Music">Submit Your Music</span></div>
+            <a href="" data-show-page="Submit Your Music"><span
+              data-center-menu="Submit Your Music">Submit Your Music</span></a></div>
         </nav>
       </div>
     </section>
   </main>
+
+  <div class="container-fluid page-content hide d-block position-absolute px-0 mx-0">
+    <!--Rules-->
+    <section class="rules w-100">
+      <h2 class="page_content_title text-uppercase text-center">The Spartan Way</h2>
+      <div class="scroll-horizontal">
+        <div class="item">
+          <span class="item-number position-relative text-center d-block" data-rules-num="1">1</span>
+          <p>You have put in the time and honed your craft. That is why you are here. (Distribute your music to 125+
+            DSPs with the click of a button.)</p>
+        </div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+      </div>
+      <footer class="footer w-100 d-flex position-fixed">
+        <a href="#" data-hide-page-content="" class="footer_close">X</a>
+        <a href="#" data-show-content="future-tools" class="footer_link d-inline-block text-right">
+          <img src="img/content-footer-arrow.png" alt="" class="footer_arrow d-block w-100">
+          <span class="footer_text" data-text="Next">Future Tools</span>
+        </a>
+      </footer>
+    </section>
+    <!--End Rules-->
+  </div>
 </div>
 
 <script src="js/main.js"></script>

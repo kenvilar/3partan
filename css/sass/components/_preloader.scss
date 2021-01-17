@@ -74,6 +74,10 @@
       height: 800px;
       top: 0;
     }
+
+    @media (max-width: 240px) {
+      top: 0;
+    }
   }
 }
 
