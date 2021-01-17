@@ -28,5 +28,6 @@ function startIntro(timer) {
   }, timer + 500);
   setTimeout(() => {
     $('.social-media-icons-wrapper').addClass('start-animate');
+    $('.submit-your-music-wrapper').addClass('start-animate');
   }, timer + 2000);
 }
