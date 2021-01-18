@@ -13,14 +13,14 @@
   img {
     width: 35vw;
     margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      width: 30vw;
+    }
   }
 
   .scroll-horizontal {
     display: flex;
-
-    @media (min-width: 768px) {
-      padding-left: 180px;
-    }
 
     .item {
       margin-right: 90px;
@@ -33,8 +33,8 @@
       @media (min-width: 768px) {
         align-items: flex-start;
         display: flex;
-        min-width: 700px;
-        width: 700px;
+        min-width: 100%;
+        width: 100%;
         padding: 24px 10px 30px;
       }
 
@@ -51,7 +51,8 @@
 
         @media (min-width: 768px) {
           font-size: calc(2 * (1vh + 1.5vw));
-          top: -30px;
+          top: 0;
+          padding: 14vw 0 2vw;
         }
 
         &:before {
@@ -59,7 +60,7 @@
           color: $brand-color;
           position: absolute;
           z-index: -1;
-          bottom: 15px;
+          bottom: 50px;
           left: 0;
           font-size: calc(3 * (1vh + 1.5vw));
           transform: translateX(0);
@@ -68,8 +69,8 @@
           width: 100%;
 
           @media (min-width: 768px) {
-            font-size: calc(6 * (1vh + 1.5vw));
-            top: 5px;
+            font-size: calc(3 * (1vh + 1.5vw));
+            bottom: 30px;
           }
         }
       }
