@@ -29,6 +29,7 @@
     "@splidejs/splide": "^2.4.21",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
+    "mousecase": "^2.0.0",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.16.1",
     "postcss-sass": "^0.4.4",
