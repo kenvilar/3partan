@@ -218,7 +218,7 @@
       font-family: 'Druk Wide', Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       white-space: nowrap;
-      line-height: 0.5;
+      line-height: 1;
       @include transform(skew(1deg, -3.5deg) rotateY(-12deg));
 
       .first {

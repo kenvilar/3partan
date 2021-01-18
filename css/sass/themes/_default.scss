@@ -76,7 +76,7 @@ main {
   }
 
   &.hide-content .preloader-image-wrapper {
-    opacity: 0;
+    visibility: hidden;
   }
 
   @media (min-width: 768px) {
