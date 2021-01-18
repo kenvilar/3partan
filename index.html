@@ -82,18 +82,18 @@
       <div class="center-menu-wrapper">
         <nav class="nav-center-menu">
           <div class="nav_item text-uppercase">
-            <a href="#" data-show-page="Home"><span data-center-menu="Home">Home</span></a></div>
+            <a href="#" data-show-page="home"><span data-center-menu="Home">Home</span></a></div>
           <div class="nav_item text-uppercase">
-            <a href="#" data-show-page="Rules"><span data-center-menu="Rules">Rules</span></a></div>
+            <a href="#" data-show-page="rules"><span data-center-menu="Rules">Rules</span></a></div>
           <div class="nav_item text-uppercase">
-            <a href="#" data-show-page="Future Tools"><span data-center-menu="Future Tools">Future Tools</span></a>
+            <a href="#" data-show-page="future-tools"><span data-center-menu="Future Tools">Future Tools</span></a>
           </div>
           <div class="nav_item text-uppercase">
-            <a href="" data-show-page="How It Works"><span data-center-menu="How It Works">How It Works</span></a></div>
+            <a href="" data-show-page="how-it-works"><span data-center-menu="How It Works">How It Works</span></a></div>
           <div class="nav_item text-uppercase">
-            <a href="" data-show-page="Testimonials"><span data-center-menu="Testimonials">Testimonials</span></a></div>
+            <a href="" data-show-page="testimonials"><span data-center-menu="Testimonials">Testimonials</span></a></div>
           <div class="nav_item text-uppercase">
-            <a href="" data-show-page="Submit Your Music"><span
+            <a href="" data-show-page="submit-your-music"><span
               data-center-menu="Submit Your Music">Submit Your Music</span></a></div>
         </nav>
       </div>
@@ -104,7 +104,7 @@
 
   <div class="container-fluid page-content hide d-block position-absolute px-0 mx-0">
     <!--Rules-->
-    <section class="rules w-100">
+    <section class="rules w-100" data-content="rules">
       <h2 class="page_content_title text-uppercase text-center">The Spartan Way</h2>
       <div class="scroll-horizontal">
         <div class="item">
@@ -131,13 +131,44 @@
       </div>
       <footer class="footer w-100 d-flex position-fixed">
         <a href="#" data-hide-page-content="" class="footer_close">X</a>
-        <a href="#" data-show-content="future-tools" class="footer_link d-inline-block text-right">
+        <a href="#" data-show-content="future-tools" data-currentpage="rules"
+           class="footer_link d-inline-block text-right">
           <img src="img/content-footer-arrow.png" alt="" class="footer_arrow d-block w-100">
           <span class="footer_text" data-text="Next">Future Tools</span>
         </a>
       </footer>
     </section>
     <!--End Rules-->
+
+    <!--Future Tools-->
+    <section class="future-tools w-100" data-content="future-tools">
+      <div class="scroll-horizontal">
+        <div class="item">
+          <img src="img/headset.png" class="img-fluid" alt="future-tools-img">
+          <span class="title text-uppercase" data-subtitle="A Record Company">In One App</span>
+          <div class="content-text">
+            <p>You have put in the time and honed your craft. That is why you are here. (Distribute your music to 125+
+              DSPs with the click of a button.)</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/headset.png" class="img-fluid" alt="future-tools-img">
+          <span></span>
+          <div class="content-text">
+            <p>You have put in the time and honed your craft. That is why you are here. (Distribute your music to 125+
+              DSPs with the click of a button.)</p>
+          </div>
+        </div>
+      </div>
+      <footer class="footer w-100 d-flex position-fixed">
+        <a href="#" data-hide-page-content="" class="footer_close">X</a>
+        <a href="#" data-show-content="future-tools" class="footer_link d-inline-block text-right">
+          <img src="img/content-footer-arrow.png" alt="" class="footer_arrow d-block w-100">
+          <span class="footer_text" data-text="Next">Future Tools</span>
+        </a>
+      </footer>
+    </section>
+    <!--End Future Tools-->
   </div>
 </div>
 

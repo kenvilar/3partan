@@ -62,14 +62,16 @@
 
         &:before {
           content: attr(data-rules-num);
-          color: black;
+          color: $brand-color;
           position: absolute;
           z-index: -1;
-          left: 50%;
-          top: 7px;
-          font-size: calc(9 * (1vh + 1.5vw));
+          left: 0;
+          top: 0;
+          font-size: calc(3 * (1vh + 1.5vw));
           transform: translateX(-50%);
           text-shadow: -1px -1px 0 #484848, 1px -1px 0 #484848, -1px 1px 0 #484848, 1px 1px 0 #484848;
+          margin: 0 auto;
+          width: 100%;
 
           @media (min-width: 768px) {
             font-size: calc(6 * (1vh + 1.5vw));

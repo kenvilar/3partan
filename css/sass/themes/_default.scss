@@ -30,6 +30,14 @@ main {
 
 .page-content {
   height: 100%;
+
+  section {
+    display: none;
+
+    &.active {
+      display: inline-flex;
+    }
+  }
 }
 
 .start-animate {
