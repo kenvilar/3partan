@@ -27,6 +27,9 @@ $(document).ready(function() {
 
   // Show Page Content
   pageContent();
+
+  // esc key
+  escapeKey();
 });
 
 // Introduction
@@ -55,7 +58,6 @@ function horizontalScrolling() {
 function clickMenu() {
   $('[data-show-page]').click(function(e) {
     e.preventDefault();
-    console.log('$(this).data()', $(this).data().showPage);
     let pageValue = $(this).data().showPage;
     if (pageValue) {
       $('.cover-container').toggleClass('hide-content');
@@ -83,13 +85,27 @@ function pageClose() {
 function pageContent() {
   $('[data-show-content]').click(function(e) {
     e.preventDefault();
-    console.log('$(this).data().showContent', $(this).data().showContent);
     let pageValue = $(this).data().showContent;
     if (pageValue) {
       if ($('.page-content section').hasClass('active')) {
         $('.page-content section.active').removeClass('active');
       }
       $('[data-content="' + pageValue + '"]').addClass('active');
+    }
+  });
+}
+
+// esc key
+function escapeKey() {
+  $(document).keyup(function(e) {
+    if (e.key === 'Escape') {
+      $('.cover-container').toggleClass('hide-content');
+      $('.page-content').toggleClass('show');
+
+      // hide the section page content
+      if ($('.page-content section').hasClass('active')) {
+        $('.page-content section.active').removeClass('active');
+      }
     }
   });
 }
