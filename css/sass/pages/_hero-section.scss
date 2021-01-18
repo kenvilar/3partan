@@ -56,7 +56,9 @@
 
     .nav-center-menu {
       opacity: 0;
-      overflow: hidden;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
       white-space: nowrap;
       vertical-align: text-top;
       margin: 0;
@@ -69,6 +71,8 @@
 
       @media (min-width: 768px) {
         padding: 0 20px;
+        overflow: hidden;
+        overflow-x: scroll;
       }
 
       &.start-animate {

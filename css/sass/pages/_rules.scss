@@ -1,9 +1,14 @@
 .rules {
-  height: calc(100vh - 70px);
-  margin-bottom: 70px;
+  height: calc(100vh - 80px);
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    height: calc(100vh - 129px);
+    margin-bottom: 0;
+  }
 
   .page_content_title {
     color: $red-color;
@@ -37,8 +42,8 @@
       @media (min-width: 768px) {
         align-items: flex-start;
         display: flex;
-        min-width: 680px;
-        width: 680px;
+        min-width: 700px;
+        width: 700px;
         padding: 24px 10px 30px;
       }
 
@@ -51,7 +56,7 @@
         position: relative;
 
         @media (min-width: 768px) {
-          font-size: calc(5 * (1vh + 1.5vw));
+          font-size: calc(4 * (1vh + 1.5vw));
           top: -30px;
         }
 
@@ -61,13 +66,13 @@
           position: absolute;
           z-index: -1;
           left: 50%;
-          top: 0;
+          top: 7px;
           font-size: calc(9 * (1vh + 1.5vw));
           transform: translateX(-50%);
           text-shadow: -1px -1px 0 #484848, 1px -1px 0 #484848, -1px 1px 0 #484848, 1px 1px 0 #484848;
 
           @media (min-width: 768px) {
-            font-size: calc(7 * (1vh + 1.5vw));
+            font-size: calc(6 * (1vh + 1.5vw));
             top: 5px;
           }
         }
