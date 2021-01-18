@@ -1,0 +1,66 @@
+.submit-your-music {
+  height: calc(100vh - 80px);
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    height: calc(100vh - 129px);
+    margin-bottom: 0;
+  }
+
+  .page_content_title {
+    color: $red-color;
+    font-family: $druk-font;
+    font-size: calc(2.5 * (1vh + 1.5vw));
+    padding: 0 20px;
+    margin-bottom: 0;
+    position: relative;
+
+    @media (min-width: 768px) {
+      font-size: calc(1.5 * (1vh + 1.5vw));
+      text-align: left !important;
+      padding-left: 100px;
+    }
+
+    &:before {
+      content: attr(data-subtitle);
+      color: $brand-color;
+      position: absolute;
+      z-index: -1;
+      bottom: 10px;
+      left: 0;
+      font-size: calc(3 * (1vh + 1.5vw));
+      transform: translateX(0);
+      text-shadow: -1px -1px 0 #828282, 1px -1px 0 #828282, -1px 1px 0 #828282, 1px 1px 0 #828282;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .form-wrapper {
+    padding: 5px 15vw 0;
+
+    label {
+      font-family: $normal-font;
+      font-size: calc(1.3 * (1vh + 1.5vw));
+      font-weight: 300;
+    }
+
+    input {
+      padding: 2.2rem 0.75rem;
+      font-size: calc(1.3 * (1vh + 1.5vw));
+    }
+
+    [type="submit"] {
+      font-family: $druk-font;
+      background-color: #9b1e25;
+      border-color: transparent;
+      box-shadow: none;
+      font-size: 36px;
+      color: $brand-color;
+      padding: 0.5rem 0.75rem;
+    }
+  }
+}
