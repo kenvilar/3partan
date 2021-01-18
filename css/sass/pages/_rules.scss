@@ -42,8 +42,8 @@
       @media (min-width: 768px) {
         align-items: flex-start;
         display: flex;
-        min-width: 700px;
-        width: 700px;
+        min-width: 680px;
+        width: 680px;
         padding: 24px 10px 30px;
       }
 
@@ -56,25 +56,23 @@
         position: relative;
 
         @media (min-width: 768px) {
-          font-size: calc(4 * (1vh + 1.5vw));
+          font-size: calc(5 * (1vh + 1.5vw));
           top: -30px;
         }
 
         &:before {
           content: attr(data-rules-num);
-          color: $brand-color;
+          color: black;
           position: absolute;
           z-index: -1;
-          left: 0;
+          left: 50%;
           top: 0;
-          font-size: calc(3 * (1vh + 1.5vw));
+          font-size: calc(9 * (1vh + 1.5vw));
           transform: translateX(-50%);
           text-shadow: -1px -1px 0 #484848, 1px -1px 0 #484848, -1px 1px 0 #484848, 1px 1px 0 #484848;
-          margin: 0 auto;
-          width: 100%;
 
           @media (min-width: 768px) {
-            font-size: calc(6 * (1vh + 1.5vw));
+            font-size: calc(7 * (1vh + 1.5vw));
             top: 5px;
           }
         }

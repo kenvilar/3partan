@@ -71,6 +71,11 @@ function pageClose() {
     e.preventDefault();
     $('.cover-container').toggleClass('hide-content');
     $('.page-content').toggleClass('show');
+
+    // hide the section page content
+    if ($('.page-content section').hasClass('active')) {
+      $('.page-content section.active').removeClass('active');
+    }
   });
 }
 
