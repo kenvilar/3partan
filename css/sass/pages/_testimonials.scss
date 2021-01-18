@@ -50,6 +50,10 @@
       .testimonials-image-wrapper {
         .testimonials-image {
           width: 100%;
+
+          @media (min-width: 768px) {
+            width: 32vw;
+          }
         }
 
         .quotation-mark {
@@ -61,10 +65,11 @@
           z-index: 1;
           top: 0;
           right: 0;
+          opacity: 0.9;
 
           @media (min-width: 768px) {
             font-size: calc(5 * (1vh + 1.5vw));
-            top: -30px;
+            top: 0;
           }
 
           &:before {
@@ -79,8 +84,9 @@
             text-shadow: -1px -1px 0 $text-color, 1px -1px 0 $text-color, -1px 1px 0 $text-color, 1px 1px 0 $text-color;
 
             @media (min-width: 768px) {
-              font-size: calc(7 * (1vh + 1.5vw));
-              top: 5px;
+              font-size: calc(6 * (1vh + 1.5vw));
+              top: -21px;
+              left: 36px;
             }
           }
         }
@@ -90,21 +96,27 @@
         font-family: $normal-font;
         font-size: calc(1 * (1vh + 1.5vw));
         font-weight: 200;
+        color: rgb(253, 253, 253, 75%);
         letter-spacing: 1px;
         text-align: left;
         line-height: 1.4;
         margin-bottom: 80px;
 
         @media (min-width: 768px) {
-          font-size: calc(1 * (1vh + 1.5vw));
+          font-size: calc(0.6 * (1vh + 1.5vw));
           margin-top: 0;
-          padding-left: 45px;
+          padding: 50px 0 0 45px;
         }
 
         h2 {
           font-size: calc(1.6 * (1vh + 1.5vw));
-          font-weight: 100;
+          font-weight: 300;
           margin-bottom: 10px;
+
+          @media (min-width: 768px) {
+            font-size: calc(1 * (1vh + 1.5vw));
+            margin-bottom: 5px;
+          }
         }
 
         .quotation-mark {
@@ -118,6 +130,7 @@
           z-index: 1;
           top: 20px;
           right: 0;
+          opacity: 0.9;
 
           @media (min-width: 768px) {
             font-size: calc(5 * (1vh + 1.5vw));
