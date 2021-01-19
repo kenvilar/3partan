@@ -59,10 +59,17 @@ function horizontalScrolling() {
 
 // click menu
 function clickMenu() {
+  let nav, isMove = false, isScroll = false;
+  
+  nav = $('.nav-center-menu');
+  nav.on('mousedown', () => isMove = false);
+  nav.on('mouseup', () => isScroll = isMove);
+  nav.on('mousemove', () => isMove = true);
+
   $('[data-show-page]').click(function(e) {
     e.preventDefault();
     let pageValue = $(this).data().showPage;
-    if (pageValue) {
+    if (pageValue && !isScroll) {
       $('.cover-container').toggleClass('hide-content');
       $('.page-content').toggleClass('show');
       $('.page-content [data-content="' + pageValue + '"]').addClass('active');
