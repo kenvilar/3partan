@@ -221,9 +221,20 @@
       line-height: 1;
       @include transform(skew(1deg, -3.5deg) rotateY(-12deg));
 
+      &:hover, &:focus, &:active {
+        .first, .second {
+          color: $red-color !important;
+          text-shadow: none !important;
+          transition-delay: inherit;
+          transition: inherit;
+        }
+      }
+
       .first {
         font-size: 0.7vw;
         display: block;
+        transition-delay: inherit;
+        transition: inherit;
       }
 
       .second {
