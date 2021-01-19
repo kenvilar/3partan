@@ -101,6 +101,11 @@
 
           &:hover, &:focus {
             text-decoration: none;
+
+            :before {
+              opacity: 1;
+              transform: translate(-3px, -3px);
+            }
           }
         }
 

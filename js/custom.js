@@ -30,6 +30,9 @@ $(document).ready(function() {
 
   // esc key
   escapeKey();
+
+  // click home menu
+  clickHomeMenu(5000);
 });
 
 // Introduction
@@ -106,6 +109,26 @@ function escapeKey() {
       if ($('.page-content section').hasClass('active')) {
         $('.page-content section.active').removeClass('active');
       }
+    }
+  });
+}
+
+// click home menu
+function clickHomeMenu(timer) {
+  $('[data-show-page]').click(function(e) {
+    e.preventDefault();
+    let pageValue = $(this).data().showPage;
+    if (pageValue === '') {
+      // removeClass animation
+      $('.cover-container').removeClass('start-animate');
+      $('.logo-image-wrapper').removeClass('start-animate');
+      $('.nav-center-menu').removeClass('start-animate');
+      $('.social-media-icons-wrapper').removeClass('start-animate');
+      $('.submit-your-music-wrapper').removeClass('start-animate');
+      $('.blinking-light').removeClass('start-animate');
+
+      // and then put back the animation
+      startIntro(timer);
     }
   });
 }
