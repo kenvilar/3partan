@@ -1,5 +1,5 @@
 .testimonials {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px);
   margin-bottom: 0;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
   .page_content_title {
     color: $red-color;
     font-family: $druk-font;
-    font-size: calc(2.5 * (1vh + 1.5vw));
+    font-size: calc(2.1 * (1vh + 1.5vw));
     padding: 0 20px;
     margin-bottom: 0;
 
@@ -26,9 +26,11 @@
 
   .scroll-horizontal {
     display: flex;
+    /*height: 100%;*/
 
     @media (min-width: 768px) {
       padding-left: 80px;
+      /*height: initial;*/
     }
 
     .item {
@@ -37,7 +39,6 @@
       width: 100vw;
       padding: 5px 40px 0;
       text-align: center;
-      display: inline-grid;
 
       @media (min-width: 768px) {
         align-items: flex-start;
@@ -100,12 +101,12 @@
         letter-spacing: 1px;
         text-align: left;
         line-height: 1.4;
-        margin-bottom: 80px;
+        margin-bottom: 0;
 
         @media (min-width: 768px) {
           font-size: calc(0.6 * (1vh + 1.5vw));
           margin-top: 0;
-          padding: 50px 0 0 45px;
+          padding: 3vw 0 0 45px;
         }
 
         h2 {

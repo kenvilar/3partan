@@ -1,5 +1,5 @@
 .how-it-works {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px);
   margin-bottom: 0;
   display: flex;
   justify-content: center;
@@ -21,6 +21,11 @@
 
   .scroll-horizontal {
     display: flex;
+    /*height: 100%;*/
+
+    @media (min-width: 768px) {
+      /*height: initial;*/
+    }
 
     .item {
       margin-right: 90px;
@@ -55,7 +60,7 @@
           color: $brand-color;
           position: absolute;
           z-index: -1;
-          bottom: 8vw;
+          bottom: 5vw;
           left: 0;
           font-size: calc(3 * (1vh + 1.5vw));
           transform: translateX(0);

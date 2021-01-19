@@ -1,5 +1,5 @@
 .rules {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px);
   margin-bottom: 0;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@
   .page_content_title {
     color: $red-color;
     font-family: $druk-font;
-    font-size: calc(2.5 * (1vh + 1.5vw));
+    font-size: calc(2.1 * (1vh + 1.5vw));
     padding: 0 20px;
     margin-bottom: 0;
 
@@ -29,6 +29,7 @@
 
     @media (min-width: 768px) {
       padding-left: 180px;
+      /*height: initial;*/
     }
 
     .item {
