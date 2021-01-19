@@ -55,6 +55,7 @@
         flex: 0 0 auto;
         text-align: center;
         position: relative;
+        top: -10px;
 
         @media (min-width: 768px) {
           font-size: calc(5 * (1vh + 1.5vw));
@@ -67,7 +68,7 @@
           position: absolute;
           z-index: -1;
           left: 50%;
-          top: 0;
+          top: 10px;
           font-size: calc(9 * (1vh + 1.5vw));
           transform: translateX(-50%);
           text-shadow: -1px -1px 0 #484848, 1px -1px 0 #484848, -1px 1px 0 #484848, 1px 1px 0 #484848;
@@ -86,6 +87,7 @@
         letter-spacing: 1px;
         text-align: left;
         line-height: 1.4;
+        padding-top: 15px;
 
         @media (min-width: 768px) {
           font-size: calc(1 * (1vh + 1.5vw));
