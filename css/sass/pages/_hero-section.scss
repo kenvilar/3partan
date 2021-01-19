@@ -227,6 +227,8 @@
       @include transform(skew(1deg, -3.5deg) rotateY(-12deg));
 
       &:hover, &:focus, &:active {
+        transform: scale(1.1) skew(1deg, -3.5deg) rotateY(-12deg);
+
         .first, .second {
           color: $red-color !important;
           text-shadow: none !important;
