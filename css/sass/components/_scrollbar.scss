@@ -1,9 +1,10 @@
 // menu
 .nav-center-menu {
-  scrollbar-width: 1px;
+  scrollbar-width: 10px;
 
   &::-webkit-scrollbar {
-    width: 1px;
+    width: 10px;
+    height: 4px;
     background-color: transparent;
   }
 
@@ -13,7 +14,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: #8080807d;
   }
 }
 
@@ -23,6 +24,7 @@
   @media (min-width: 768px) {
     &::-webkit-scrollbar {
       width: 10px;
+      height: 4px;
       background-color: transparent;
     }
 
@@ -32,7 +34,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: $red-color;
+      background-color: #8080807d;
       border-radius: 5px;
     }
   }
