@@ -70,7 +70,7 @@
       @include transitionAll(0.45s);
 
       @media (min-width: 768px) {
-        padding: 0 20px;
+        padding: 0 20px 3vw;
         overflow: hidden;
         overflow-x: scroll;
       }

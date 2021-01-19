@@ -14,7 +14,13 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #8080807d;
+    background-color: transparent;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: #8080807d;
+    }
   }
 }
 
@@ -34,8 +40,14 @@
     }
 
     &::-webkit-scrollbar-thumb {
-      background-color: #8080807d;
+      background-color: transparent;
       border-radius: 5px;
+    }
+
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: #8080807d;
+      }
     }
   }
 }
