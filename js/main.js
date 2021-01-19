@@ -6,3 +6,4 @@ import '../css/sass/main.scss';
 
 import '../js/custom';
 import '../js/slick-carousel';
+import '../js/touchscroll';
