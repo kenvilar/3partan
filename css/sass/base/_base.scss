@@ -47,6 +47,11 @@ body {
   box-sizing: inherit;
 }
 
+*:focus,
+input[type="search"]:focus {
+  outline: 0;
+}
+
 /**
  * Basic styles for links
  */
