@@ -13,14 +13,12 @@ main {
 
 // For Page Content
 .hide {
-  opacity: 0;
   display: none;
   z-index: -1;
   transition-delay: 2.45s;
   @include transitionAll(0.5s);
 
   &.show {
-    opacity: 1;
     display: block;
     z-index: 20;
     background-color: $brand-color;
