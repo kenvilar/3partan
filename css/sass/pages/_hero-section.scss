@@ -64,6 +64,8 @@
 
     .nav-center-menu {
       opacity: 0;
+      -webkit-overflow-scrolling: touch;
+      overflow-scrolling: touch;
       transition-delay: 1.25s;
       @include transform(translateX(5%));
       @include transitionAll(0.45s);
