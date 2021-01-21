@@ -11,6 +11,7 @@ main {
   padding-top: 2.5rem;
 }
 
+// For Page Content
 .hide {
   opacity: 0;
   z-index: -1;
@@ -28,6 +29,7 @@ main {
   }
 }
 
+// For Page Content
 .page-content {
   height: 100%;
 
@@ -40,14 +42,14 @@ main {
   }
 }
 
-.start-animate {
+/*.start-animate {
   &.main-background {
     animation-name: bg_zoom_o;
     animation-duration: 5s;
     background-size: 100%;
     @include transitionAll(0.5s);
   }
-}
+}*/
 
 .main-background {
   background: $brand-color url("../../img/background--mobile.jpg") no-repeat center top;
@@ -59,24 +61,32 @@ main {
   transform: translateX(0);
   @include transition(0.5s);
 
+  &.start-animate {
+    animation-name: bg_zoom_o;
+    animation-duration: 5s;
+    background-size: 100%;
+    @include transitionAll(0.5s);
+  }
+
   &.hide-content {
     animation-name: zoomBeforePage;
     animation-fill-mode: both;
     animation-duration: 5s;
-  }
 
-  // hide all images when content page load
-  &.hide-content .logo-image-wrapper,
-  &.hide-content .center-menu-wrapper,
-  &.hide-content .social-media-icons-wrapper,
-  &.hide-content .submit-your-music-wrapper {
-    animation-name: hideBeforePage;
-    animation-fill-mode: both;
-    animation-duration: 5s;
-  }
+    // hide all images when content page load
+    .logo-image-wrapper, // logo
+    .center-menu-wrapper, // menu
+    .social-media-icons-wrapper, // social icons
+    .submit-your-music-wrapper { // submit your music icon
+      animation-name: hideBeforePage;
+      animation-fill-mode: both;
+      animation-duration: 5s;
+    }
 
-  &.hide-content .preloader-image-wrapper {
-    visibility: hidden;
+    // hide the preloader image
+    .preloader-image-wrapper {
+      visibility: hidden;
+    }
   }
 
   @media (min-width: 768px) {
@@ -84,6 +94,7 @@ main {
     box-shadow: inset 0 0 100px 300px rgb(0 0 0 / 51%);
   }
 
+  // shadow
   &:before {
     content: '';
     box-shadow: 0 -20px 100px 70px #000;
@@ -93,6 +104,7 @@ main {
     }
   }
 
+  // shadow
   &:after {
     content: '';
     box-shadow: 0 -10px 300px 100px #000;
