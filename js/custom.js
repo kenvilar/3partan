@@ -60,7 +60,7 @@ function horizontalScrolling() {
 // click menu
 function clickMenu() {
   let nav, isMove = false, isScroll = false;
-  
+
   nav = $('.nav-center-menu');
   nav.on('mousedown', () => isMove = false);
   nav.on('mouseup', () => isScroll = isMove);
