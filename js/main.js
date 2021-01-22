@@ -99,3 +99,6 @@ ScrollReveal().reveal('.item .content-text',
     viewFactor: 0.2,
     container: '#how-it-works-scroll-horizontal',
   });
+
+// Testimonials
+
