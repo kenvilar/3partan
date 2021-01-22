@@ -64,7 +64,6 @@ main {
     @include transitionAll(0.5s);
 
     // show all assets when content page hide
-    .preloader-image-wrapper, // preloader
     .logo-image-wrapper, // logo
     .center-menu-wrapper, // menu
     .scrolling-left-right-container, // scrolling text labels
@@ -82,8 +81,13 @@ main {
     animation-fill-mode: both;
     animation-duration: 5s;
 
+    &.to-tv {
+      animation-name: zoomToTv;
+      animation-fill-mode: both;
+      animation-duration: 5s;
+    }
+
     // hide all images when content page load
-    .preloader-image-wrapper, // preloader
     .logo-image-wrapper, // logo
     .center-menu-wrapper, // menu
     .scrolling-left-right-container, // scrolling text labels
@@ -129,14 +133,14 @@ main {
     transform: translate(0, 50px);
   }
   100% {
-    background-size: 112%;
+    background-size: 150%;
     transform: translate(0, 0);
   }
 }
 
 @keyframes bg_zoom_o {
   0% {
-    background-size: 112%;
+    background-size: 150%;
   }
   100% {
     background-size: 100%;
@@ -203,3 +207,18 @@ main {
     opacity: 1;
   }
 }
+
+@keyframes zoomToTv {
+  0% {
+    background-position: center center;
+    background-size: 100%;
+  }
+  50% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center top;
+    background-size: 270%;
+  }
+}
+

@@ -71,7 +71,14 @@ function clickMenu() {
     e.preventDefault();
     let pageValue = $(this).data().showPage;
     if (pageValue && !isScroll) {
-      $('.cover-container').toggleClass('hide-content');
+      if (pageValue === 'future-tools' || pageValue === 'how-it-works' ||
+        pageValue === 'submit-your-music') {
+        $('.cover-container').toggleClass('hide-content');
+        $('.cover-container').toggleClass('to-tv');
+      } else {
+        $('.cover-container').toggleClass('hide-content');
+      }
+
       $('.page-content').toggleClass('show');
       $('.page-content [data-content="' + pageValue + '"]').addClass('active');
     }
@@ -83,6 +90,11 @@ function pageClose() {
   $('[data-hide-page-content]').click(function(e) {
     e.preventDefault();
     $('.cover-container').toggleClass('hide-content');
+
+    if ($('.cover-container').hasClass('to-tv')) {
+      $('.cover-container').toggleClass('to-tv');
+    }
+
     $('.page-content').toggleClass('show');
 
     // hide the section page content
