@@ -48,6 +48,7 @@ function startIntro(timer) {
     $('.social-media-icons-wrapper').addClass('start-animate');
     $('.submit-your-music-wrapper').addClass('start-animate');
     $('.blinking-light').addClass('start-animate');
+    $('.scrolling-left-right-container').addClass('start-animate');
   }, timer + 2000);
 }
 

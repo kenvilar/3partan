@@ -129,6 +129,35 @@
     }
   }
 
+  .scrolling-left-right-container {
+    opacity: 0;
+    position: absolute;
+    top: 60vw;
+    left: 50%;
+    display: flex;
+    @include transform(translateX(-50%));
+    @include transitionAll(0.45s);
+    transition-delay: 0.75s;
+
+    @media (min-width: 768px) {
+      top: 18.5vw;
+    }
+
+    &.start-animate {
+      opacity: 1;
+    }
+
+    .scrolling-left-right-text {
+      font-size: 2vw;
+      margin: 0 10px;
+      white-space: nowrap;
+
+      @media (min-width: 768px) {
+        font-size: 0.6vw;
+      }
+    }
+  }
+
   .social-media-icons-wrapper {
     opacity: 0;
     position: absolute;
