@@ -17,14 +17,19 @@
 
 
     &.start-animate {
-      opacity: 1;
+      opacity: 0;
       transition-delay: 0.5s;
       transform: translateY(0) scale(1);
     }
 
     img {
+      display: none;
       height: auto;
       width: 38%;
+
+      &.is_active {
+        display: block;
+      }
 
       @media (min-width: 280px) {
         width: 36%;

@@ -79,6 +79,18 @@ function clickMenu() {
         $('.cover-container').toggleClass('hide-content');
       }
 
+      if (pageValue === 'future-tools') {
+        // remove the spartan logo
+        $('.logo-image-wrapper').find($('.is_active')).removeClass('is_active');
+        // show the future-tools logo
+        $('.logo-image-wrapper').find($('.future-tools')).addClass('is_active');
+      } else if (pageValue === 'how-it-works') {
+        // remove the spartan logo
+        $('.logo-image-wrapper').find($('.is_active')).removeClass('is_active');
+        // show te how-it-works logo
+        $('.logo-image-wrapper').find($('.how-it-works')).addClass('is_active');
+      }
+
       $('.page-content').toggleClass('show');
       $('.page-content [data-content="' + pageValue + '"]').addClass('active');
     }
@@ -96,6 +108,10 @@ function pageClose() {
     }
 
     $('.page-content').toggleClass('show');
+
+    // reset the logo
+    $('.logo-image-wrapper').find($('.is_active')).removeClass('is_active');
+    $('.logo-image-wrapper').find($('.spartan')).addClass('is_active');
 
     // hide the section page content
     if ($('.page-content section').hasClass('active')) {
