@@ -101,4 +101,23 @@ ScrollReveal().reveal('.item .content-text',
   });
 
 // Testimonials
-
+ScrollReveal().reveal('.item .testimonials-image-wrapper',
+  {
+    reset: true,
+    duration: 1000,
+    scale: 1,
+    origin: 'bottom',
+    distance: '100px',
+    viewFactor: 0.2,
+    container: '#testimonials-scroll-horizontal',
+  });
+ScrollReveal().reveal('.item .content-text',
+  {
+    reset: true,
+    duration: 1000,
+    scale: 1,
+    origin: 'right',
+    distance: '100px',
+    viewFactor: 0.2,
+    container: '#testimonials-scroll-horizontal',
+  });
