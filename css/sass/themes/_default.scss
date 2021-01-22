@@ -64,8 +64,11 @@ main {
     @include transitionAll(0.5s);
 
     // show all assets when content page hide
+    .preloader-image-wrapper, // preloader
     .logo-image-wrapper, // logo
     .center-menu-wrapper, // menu
+    .scrolling-left-right-container, // scrolling text labels
+    .blinking-light, // blinking lights
     .social-media-icons-wrapper, // social icons
     .submit-your-music-wrapper { // submit your music icon
       animation-name: showAfterPage;
@@ -80,8 +83,11 @@ main {
     animation-duration: 5s;
 
     // hide all images when content page load
+    .preloader-image-wrapper, // preloader
     .logo-image-wrapper, // logo
     .center-menu-wrapper, // menu
+    .scrolling-left-right-container, // scrolling text labels
+    .blinking-light, // blinking lights
     .social-media-icons-wrapper, // social icons
     .submit-your-music-wrapper { // submit your music icon
       animation-name: hideBeforePage;
