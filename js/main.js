@@ -12,22 +12,22 @@ import ScrollReveal from 'scrollreveal';
 
 ScrollReveal().reveal('.item .item-number',
   {
+    reset: true,
     duration: 1000,
     scale: 1,
     origin: 'bottom',
     distance: '100px',
     viewFactor: 0.2,
-    reset: true,
     container: '#rules-scroll-horizontal',
   });
 ScrollReveal().reveal('.item .content-text',
   {
+    reset: true,
     duration: 1000,
     scale: 1,
     origin: 'right',
     distance: '100px',
     viewFactor: 0.2,
-    reset: true,
     container: '#rules-scroll-horizontal',
   });
 ScrollReveal().reveal('.item:last-child .content-text',
@@ -39,31 +39,63 @@ ScrollReveal().reveal('.item:last-child .content-text',
 // Future Tools
 ScrollReveal().reveal('.item img',
   {
+    reset: true,
     duration: 1000,
     scale: 0.8,
     origin: 'top',
     distance: '0',
     viewFactor: 0.2,
-    reset: true,
     container: '#future-tools-scroll-horizontal',
   });
 ScrollReveal().reveal('.item .title',
   {
+    reset: true,
     duration: 1000,
     scale: 1,
     origin: 'bottom',
     distance: '100px',
     viewFactor: 0.2,
-    reset: true,
     container: '#future-tools-scroll-horizontal',
   });
 ScrollReveal().reveal('.item .content-text',
   {
+    reset: true,
     duration: 1000,
     scale: 1,
     origin: 'left',
     distance: '100px',
     viewFactor: 0.2,
-    reset: true,
     container: '#future-tools-scroll-horizontal',
+  });
+
+// How It Works
+ScrollReveal().reveal('.item img',
+  {
+    reset: true,
+    duration: 1000,
+    scale: 0.8,
+    origin: 'top',
+    distance: '0',
+    viewFactor: 0.2,
+    container: '#how-it-works-scroll-horizontal',
+  });
+ScrollReveal().reveal('.item .title',
+  {
+    reset: true,
+    duration: 1000,
+    scale: 1,
+    origin: 'bottom',
+    distance: '100px',
+    viewFactor: 0.2,
+    container: '#how-it-works-scroll-horizontal',
+  });
+ScrollReveal().reveal('.item .content-text',
+  {
+    reset: true,
+    duration: 1000,
+    scale: 1,
+    origin: 'left',
+    distance: '100px',
+    viewFactor: 0.2,
+    container: '#how-it-works-scroll-horizontal',
   });
