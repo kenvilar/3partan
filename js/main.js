@@ -30,11 +30,6 @@ ScrollReveal().reveal('.item .content-text',
     viewFactor: 0.2,
     container: '#rules-scroll-horizontal',
   });
-ScrollReveal().reveal('.item:last-child .content-text',
-  {
-    mobile: false,
-    container: '#rules-scroll-horizontal',
-  });
 
 // Future Tools
 ScrollReveal().reveal('.item img',
