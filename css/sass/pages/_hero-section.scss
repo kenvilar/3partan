@@ -28,7 +28,7 @@
       width: 38%;
 
       &.is_active {
-        display: block;
+        display: initial;
       }
 
       @media (min-width: 280px) {

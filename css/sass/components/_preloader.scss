@@ -39,7 +39,7 @@
   transform-origin: center;
   z-index: 20;
 
-  @media (max-height: 640px) {
+  @media (max-width: 768px) and (max-height: 640px) {
     top: -30%;
   }
 
