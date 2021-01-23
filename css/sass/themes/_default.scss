@@ -82,9 +82,15 @@ main {
     animation-duration: 5s;
 
     &.to-tv {
-      animation-name: zoomToTv;
+      animation-name: zoomToTvMobile;
       animation-fill-mode: both;
       animation-duration: 5s;
+
+      @media (min-width: 768px) {
+        animation-name: zoomToTv;
+        animation-fill-mode: both;
+        animation-duration: 5s;
+      }
     }
 
     // hide all images when content page load
@@ -155,7 +161,7 @@ main {
     background-position: center center;
   }
   100% {
-    background-size: 150%;
+    background-size: 200%;
     background-position: center center;
   }
 }
@@ -208,17 +214,43 @@ main {
   }
 }
 
-@keyframes zoomToTv {
+@keyframes zoomToTvMobile {
   0% {
-    background-position: center center;
     background-size: 100%;
+  }
+  25% {
+    background-position: center top;
   }
   50% {
     background-position: center top;
   }
+  75% {
+    background-size: 200%;
+    background-position: center top;
+  }
+  100% {
+    background-size: 270%;
+    background-position: center top;
+  }
+}
+
+@keyframes zoomToTv {
+  0% {
+    background-size: 100%;
+  }
+  25% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center top;
+  }
+  75% {
+    background-size: 250%;
+    background-position: center top;
+  }
   100% {
     background-position: center top;
-    background-size: 270%;
+    background-size: 400%;
   }
 }
 
