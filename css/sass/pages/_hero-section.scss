@@ -197,6 +197,7 @@
       -ms-touch-action: pan-y;
       touch-action: pan-y;
       -webkit-tap-highlight-color: transparent;
+      transform: rotate(3deg) translateY(4px);
 
       &.slick-initialized .slick-slide {
         display: block;
