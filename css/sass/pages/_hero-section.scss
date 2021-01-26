@@ -175,7 +175,7 @@
     left: 5vw;
     width: 10vw;
     padding: 1vw 0;
-    transform: rotate(3deg) translateY(4px);
+    transform: rotate(0) translateY(4px);
     transition-delay: 1.5s;
     transition: all 0.45s linear;
 
@@ -249,7 +249,7 @@
     position: absolute;
     top: 7.6vw;
     width: 10vw;
-    left: 84vw;
+    left: 84.5vw;
     transition-delay: 1.5s;
     @include transitionAll(0.5s);
 
