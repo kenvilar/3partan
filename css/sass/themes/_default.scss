@@ -91,9 +91,13 @@ main {
   &.start-animate.done-with-zoom-tv {
     main {
       animation-name: bg_zoom_o_after_tv_mobile;
+      animation-fill-mode: both;
+      animation-duration: 5s;
 
       @media (min-width: 768px) {
         animation-name: bg_zoom_o_after_tv;
+        animation-fill-mode: both;
+        animation-duration: 5s;
       }
     }
   }
@@ -180,7 +184,7 @@ main {
     transform: scale(3) translateY(19.5vw);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
 }
 
@@ -189,13 +193,13 @@ main {
     transform: scale(3) translateY(45vw);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
 }
 
 @keyframes zoomBeforePage {
   0% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
   100% {
     transform: scale(1.75) translateY(3vw);
@@ -248,7 +252,7 @@ main {
 
 @keyframes zoomToTvMobile {
   0% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
   100% {
     transform: scale(3) translateY(45vw);
@@ -257,7 +261,7 @@ main {
 
 @keyframes zoomToTv {
   0% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
   100% {
     transform: scale(3) translateY(19.5vw);
