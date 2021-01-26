@@ -12,8 +12,6 @@ jQuery(function($) {
   };
 });
 
-var currentPage = null;
-
 $(document).ready(function() {
   // Introduction
   startIntro(5000);
@@ -71,7 +69,7 @@ function clickMenu() {
 
   $('[data-show-page]').click(function(e) {
     e.preventDefault();
-    let pageValue = currentPage = $(this).data().showPage;
+    let pageValue = $(this).data().showPage;
 
     // remove done-with-tv className
     $('.cover-container').removeClass('done-with-zoom-tv');
@@ -107,6 +105,8 @@ function clickMenu() {
 function pageClose() {
   $('[data-hide-page-content]').click(function(e) {
     e.preventDefault();
+    let pageValue = $(this).data().hidePageContent;
+    console.log('pageValue', pageValue);
     $('.cover-container').toggleClass('hide-content');
 
     if ($('.cover-container').hasClass('to-tv')) {
@@ -123,6 +123,20 @@ function pageClose() {
     // hide the section page content
     if ($('.page-content section').hasClass('active')) {
       $('.page-content section.active').removeClass('active');
+    }
+
+    if (pageValue === 'home') {
+      // removeClass animation
+      $('.cover-container').removeClass('start-animate');
+      $('.logo-image-wrapper').removeClass('start-animate');
+      $('.nav-center-menu').removeClass('start-animate');
+      $('.social-media-icons-wrapper').removeClass('start-animate');
+      $('.submit-your-music-wrapper').removeClass('start-animate');
+      $('.blinking-light').removeClass('start-animate');
+      $('.scrolling-left-right-container').removeClass('start-animate');
+
+      // and then put back the animation
+      startIntro(5000);
     }
   });
 }
