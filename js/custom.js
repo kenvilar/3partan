@@ -12,6 +12,8 @@ jQuery(function($) {
   };
 });
 
+var currentPage = null;
+
 $(document).ready(function() {
   // Introduction
   startIntro(5000);
@@ -69,7 +71,11 @@ function clickMenu() {
 
   $('[data-show-page]').click(function(e) {
     e.preventDefault();
-    let pageValue = $(this).data().showPage;
+    let pageValue = currentPage = $(this).data().showPage;
+
+    // remove done-with-tv className
+    $('.cover-container').removeClass('done-with-zoom-tv');
+
     if (pageValue && !isScroll) {
       if (pageValue === 'future-tools' || pageValue === 'how-it-works' ||
         pageValue === 'submit-your-music') {
@@ -105,6 +111,7 @@ function pageClose() {
 
     if ($('.cover-container').hasClass('to-tv')) {
       $('.cover-container').toggleClass('to-tv');
+      $('.cover-container').addClass('done-with-zoom-tv');
     }
 
     $('.page-content').toggleClass('show');
