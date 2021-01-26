@@ -74,7 +74,7 @@ main {
   &.start-animate {
     main {
       animation-name: bg_zoom_o;
-      animation-duration: 5s;
+      animation-duration: 1.5s;
       background-size: 100%;
       @include transitionAll(0.5s);
 
