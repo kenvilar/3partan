@@ -169,6 +169,7 @@ function clickHomeMenu(timer) {
       $('.social-media-icons-wrapper').removeClass('start-animate');
       $('.submit-your-music-wrapper').removeClass('start-animate');
       $('.blinking-light').removeClass('start-animate');
+      $('.scrolling-left-right-container').removeClass('start-animate');
 
       // and then put back the animation
       startIntro(timer);
