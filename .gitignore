@@ -19,3 +19,13 @@ public
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Build cache
+.parcel-cache/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key

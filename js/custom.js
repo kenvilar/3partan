@@ -1,4 +1,6 @@
-jQuery(function($) {
+import $ from 'jquery';
+
+$(function($) {
   $.fn.hScroll = function(amount) {
     amount = amount || 120;
     $(this).bind('DOMMouseScroll mousewheel', function(event) {
@@ -106,7 +108,6 @@ function pageClose() {
   $('[data-hide-page-content]').click(function(e) {
     e.preventDefault();
     let pageValue = $(this).data().hidePageContent;
-    console.log('pageValue', pageValue);
     $('.cover-container').toggleClass('hide-content');
 
     if ($('.cover-container').hasClass('to-tv')) {
@@ -158,14 +159,8 @@ function pageContent() {
 // esc key
 function escapeKey() {
   $(document).keyup(function(e) {
-    if (e.key === 'Escape') {
-      $('.cover-container').toggleClass('hide-content');
-      $('.page-content').toggleClass('show');
-
-      // hide the section page content
-      if ($('.page-content section').hasClass('active')) {
-        $('.page-content section.active').removeClass('active');
-      }
+    if (e.key === 'Escape' && $('.page-content').hasClass('show')) {
+      $('.page-content section.active [data-hide-page-content]').trigger('click');
     }
   });
 }

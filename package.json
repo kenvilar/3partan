@@ -8,21 +8,17 @@
   "license": "",
   "author": "Ken Vilar",
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel build index.html 404.html --public-url ./ --no-source-maps",
     "dev": "parcel index.html --open",
-    "prod": "parcel build entry.js",
-    "sergey": "sergey --exclude=css,js,img,",
-    "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "prod": "npm run build"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "autoprefixer": "^9.0.0",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-data-src": "^1.0.1",
-    "parcel-plugin-imagemin": "^4.0.2",
-    "parcel-plugin-keep-asset-folders": "^0.2.0",
-    "postcss-modules": "^2.0.0",
+    "@parcel/packager-raw-url": "^2.16.4",
+    "@parcel/transformer-sass": "2.16.4",
+    "@parcel/transformer-webmanifest": "^2.16.4",
+    "parcel": "2.16.4",
     "sass": "^1.32.0"
   },
   "dependencies": {
@@ -32,20 +28,12 @@
     "mousecase": "^2.0.0",
     "normalize.css": "^8.0.1",
     "popper.js": "^1.16.1",
-    "postcss-sass": "^0.4.4",
     "scrollreveal": "^4.0.7",
-    "sergey": "0.0.13",
     "slick-carousel": "^1.8.1",
     "vanilla-lazyload": "^17.3.0"
   },
   "browserslist": [
-    "cover 99.5%",
     "defaults",
-    "last 2 versions",
-    "last 2 years",
-    "> 1%",
-    "IE 10",
-    "since 2015",
-    "dead"
+    "not IE 11"
   ]
 }

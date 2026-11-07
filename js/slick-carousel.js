@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 import 'slick-carousel';
 
 $('.social-media-slider').slick({
